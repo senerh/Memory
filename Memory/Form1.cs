@@ -18,6 +18,7 @@ namespace Memory
         // d'images dans le réservoir)
         int nbCartesSurTapis;   // Nombre de cartes sur le tapis
         int[] cartesTiree;
+        int imageatrouvee;
 
         private void Distribution_Aleatoire()
         {
@@ -58,7 +59,7 @@ namespace Memory
         }
 
        
-        
+       
 
         public memory()
         {
@@ -83,11 +84,6 @@ namespace Memory
         }
 
 
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void btn_Distribuer_Click(object sender, EventArgs e)
         {
             // On récupère le nombre d'images dans le réservoir :
@@ -105,10 +101,6 @@ namespace Memory
             Distribution_Aleatoire();
         }
 
-        private void memory_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void btn_Retourner_Click(object sender, EventArgs e)
         {
@@ -122,23 +114,88 @@ namespace Memory
             int i = hasard.NumeroAleatoire();
             switch(i)
             {
-                case 1 : 
+                case 1 :
+                    imageatrouvee = cartesTiree[0];
                     pb_Recherche.Image = ilSabotDeCartes.Images[cartesTiree[0]];
                     break;
                 case 2 :
+                    imageatrouvee = cartesTiree[1];
                     pb_Recherche.Image = ilSabotDeCartes.Images[cartesTiree[1]];
                     break;
                 case 3 :
+                    imageatrouvee = cartesTiree[2];
                     pb_Recherche.Image = ilSabotDeCartes.Images[cartesTiree[2]];
                     break;
                 case 4 :
+                    imageatrouvee = cartesTiree[3];
                     pb_Recherche.Image = ilSabotDeCartes.Images[cartesTiree[3]];
                     break;
             }
              
 
             Retournement();
-          
+
+        }
+
+        private bool testImage(int p)
+        {
+            if (p == imageatrouvee)
+            {
+                MessageBox.Show("BRAVO", "resultat !");
+                return true;
+            }
+            else
+            {
+                MessageBox.Show("DOMMAGE", "resultat !");
+                return false;
+            }
+        }
+
+        private void selection(int Case)
+        {
+            Boolean b;
+            switch(Case)
+                {
+                    case 1: 
+                        pb_01.Image = ilSabotDeCartes.Images[cartesTiree[0]];
+                        b = testImage(cartesTiree[0]);
+                        break;
+                    case 2:
+                        pb_02.Image = ilSabotDeCartes.Images[cartesTiree[1]];
+                        b = testImage(cartesTiree[1]);
+                        break;
+                    case 3:
+                        pb_03.Image = ilSabotDeCartes.Images[cartesTiree[2]];
+                        b = testImage(cartesTiree[2]);
+                        break;
+                    case 4:
+                        pb_04.Image = ilSabotDeCartes.Images[cartesTiree[3]];
+                        b = testImage(cartesTiree[3]);
+                        break;
+                }
+            Retournement();
+
+        }
+
+        private void pb_01_Click(object sender, EventArgs e)
+        {
+            selection(1);
+
+        }
+
+        private void pb_02_Click(object sender, EventArgs e)
+        {
+            selection(2);
+        }
+
+        private void pb_03_Click(object sender, EventArgs e)
+        {
+            selection(3);
+        }
+
+        private void pb_04_Click(object sender, EventArgs e)
+        {
+            selection(4);
         }
     }
 }
