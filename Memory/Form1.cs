@@ -20,6 +20,12 @@ namespace Memory
         int[] cartesTiree;
         int imageatrouvee;
 
+        
+        public memory()
+        {
+            InitializeComponent();
+        }
+
         private void Distribution_Aleatoire()
         {
             cartesTiree = new int[nbCartesSurTapis];
@@ -58,14 +64,6 @@ namespace Memory
             }
         }
 
-       
-       
-
-        public memory()
-        {
-            InitializeComponent();
-        }
-
         private void Distribution_Sequentielle()
         {
             PictureBox carte;
@@ -83,7 +81,6 @@ namespace Memory
             }
         }
 
-
         private void btn_Distribuer_Click(object sender, EventArgs e)
         {
             // On récupère le nombre d'images dans le réservoir :
@@ -100,7 +97,6 @@ namespace Memory
             // On effectue la distribution (aléatoire) proprement dite
             Distribution_Aleatoire();
         }
-
 
         private void btn_Retourner_Click(object sender, EventArgs e)
         {
@@ -130,6 +126,22 @@ namespace Memory
                     imageatrouvee = cartesTiree[3];
                     pb_Recherche.Image = ilSabotDeCartes.Images[cartesTiree[3]];
                     break;
+                case 5:
+                    imageatrouvee = cartesTiree[4];
+                    pb_Recherche.Image = ilSabotDeCartes.Images[cartesTiree[4]];
+                    break;
+                case 6:
+                    imageatrouvee = cartesTiree[5];
+                    pb_Recherche.Image = ilSabotDeCartes.Images[cartesTiree[5]];
+                    break;
+                case 7:
+                    imageatrouvee = cartesTiree[6];
+                    pb_Recherche.Image = ilSabotDeCartes.Images[cartesTiree[6]];
+                    break;
+                case 8:
+                    imageatrouvee = cartesTiree[7];
+                    pb_Recherche.Image = ilSabotDeCartes.Images[cartesTiree[7]];
+                    break;
             }
              
 
@@ -153,7 +165,7 @@ namespace Memory
 
         private void selection(int Case)
         {
-            Boolean b;
+            Boolean b = false;
             switch(Case)
                 {
                     case 1: 
@@ -172,9 +184,31 @@ namespace Memory
                         pb_04.Image = ilSabotDeCartes.Images[cartesTiree[3]];
                         b = testImage(cartesTiree[3]);
                         break;
+                    case 5:
+                        pb_05.Image = ilSabotDeCartes.Images[cartesTiree[4]];
+                        b = testImage(cartesTiree[4]);
+                        break;
+                    case 6:
+                        pb_06.Image = ilSabotDeCartes.Images[cartesTiree[5]];
+                        b = testImage(cartesTiree[5]);
+                        break;
+                    case 7:
+                        pb_07.Image = ilSabotDeCartes.Images[cartesTiree[6]];
+                        b = testImage(cartesTiree[6]);
+                        break;
+                    case 8:
+                        pb_08.Image = ilSabotDeCartes.Images[cartesTiree[7]];
+                        b = testImage(cartesTiree[7]);
+                        break;
                 }
-            Retournement();
-
+            if (b == true)
+            {
+                
+            }
+            else
+            {
+                Retournement();
+            }
         }
 
         private void pb_01_Click(object sender, EventArgs e)
@@ -196,6 +230,26 @@ namespace Memory
         private void pb_04_Click(object sender, EventArgs e)
         {
             selection(4);
+        }
+
+        private void pb_05_Click(object sender, EventArgs e)
+        {
+            selection(5);
+        }
+
+        private void pb_06_Click(object sender, EventArgs e)
+        {
+            selection(6);
+        }
+
+        private void pb_07_Click(object sender, EventArgs e)
+        {
+            selection(7);
+        }
+
+        private void pb_08_Click(object sender, EventArgs e)
+        {
+            selection(8);
         }
     }
 }

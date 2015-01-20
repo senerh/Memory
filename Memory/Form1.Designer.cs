@@ -40,12 +40,20 @@
             this.btn_Retourner = new System.Windows.Forms.Button();
             this.btn_Jouer = new System.Windows.Forms.Button();
             this.pb_Recherche = new System.Windows.Forms.PictureBox();
+            this.pb_05 = new System.Windows.Forms.PictureBox();
+            this.pb_06 = new System.Windows.Forms.PictureBox();
+            this.pb_07 = new System.Windows.Forms.PictureBox();
+            this.pb_08 = new System.Windows.Forms.PictureBox();
             this.tlpTapisDeCartes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_01)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_02)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_03)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_04)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_Recherche)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_05)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_06)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_07)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_08)).BeginInit();
             this.SuspendLayout();
             // 
             // tlpTapisDeCartes
@@ -58,12 +66,17 @@
             this.tlpTapisDeCartes.Controls.Add(this.pb_01, 0, 0);
             this.tlpTapisDeCartes.Controls.Add(this.pb_02, 1, 0);
             this.tlpTapisDeCartes.Controls.Add(this.pb_03, 2, 0);
+            this.tlpTapisDeCartes.Controls.Add(this.pb_05, 0, 1);
             this.tlpTapisDeCartes.Controls.Add(this.pb_04, 3, 0);
+            this.tlpTapisDeCartes.Controls.Add(this.pb_06, 1, 1);
+            this.tlpTapisDeCartes.Controls.Add(this.pb_07, 2, 1);
+            this.tlpTapisDeCartes.Controls.Add(this.pb_08, 3, 1);
             this.tlpTapisDeCartes.Location = new System.Drawing.Point(50, 25);
             this.tlpTapisDeCartes.Name = "tlpTapisDeCartes";
-            this.tlpTapisDeCartes.RowCount = 1;
-            this.tlpTapisDeCartes.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpTapisDeCartes.Size = new System.Drawing.Size(440, 110);
+            this.tlpTapisDeCartes.RowCount = 2;
+            this.tlpTapisDeCartes.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tlpTapisDeCartes.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tlpTapisDeCartes.Size = new System.Drawing.Size(440, 220);
             this.tlpTapisDeCartes.TabIndex = 0;
             // 
             // pb_01
@@ -104,7 +117,7 @@
             // 
             // btn_Distribuer
             // 
-            this.btn_Distribuer.Location = new System.Drawing.Point(53, 307);
+            this.btn_Distribuer.Location = new System.Drawing.Point(53, 343);
             this.btn_Distribuer.Name = "btn_Distribuer";
             this.btn_Distribuer.Size = new System.Drawing.Size(100, 23);
             this.btn_Distribuer.TabIndex = 1;
@@ -160,7 +173,7 @@
             // 
             // btn_Retourner
             // 
-            this.btn_Retourner.Location = new System.Drawing.Point(163, 307);
+            this.btn_Retourner.Location = new System.Drawing.Point(163, 343);
             this.btn_Retourner.Name = "btn_Retourner";
             this.btn_Retourner.Size = new System.Drawing.Size(100, 23);
             this.btn_Retourner.TabIndex = 2;
@@ -170,7 +183,7 @@
             // 
             // btn_Jouer
             // 
-            this.btn_Jouer.Location = new System.Drawing.Point(273, 307);
+            this.btn_Jouer.Location = new System.Drawing.Point(273, 343);
             this.btn_Jouer.Name = "btn_Jouer";
             this.btn_Jouer.Size = new System.Drawing.Size(100, 23);
             this.btn_Jouer.TabIndex = 2;
@@ -180,17 +193,53 @@
             // 
             // pb_Recherche
             // 
-            this.pb_Recherche.Location = new System.Drawing.Point(383, 226);
+            this.pb_Recherche.Location = new System.Drawing.Point(383, 262);
             this.pb_Recherche.Name = "pb_Recherche";
             this.pb_Recherche.Size = new System.Drawing.Size(100, 104);
             this.pb_Recherche.TabIndex = 0;
             this.pb_Recherche.TabStop = false;
             // 
+            // pb_05
+            // 
+            this.pb_05.Location = new System.Drawing.Point(3, 113);
+            this.pb_05.Name = "pb_05";
+            this.pb_05.Size = new System.Drawing.Size(100, 104);
+            this.pb_05.TabIndex = 0;
+            this.pb_05.TabStop = false;
+            this.pb_05.Click += new System.EventHandler(this.pb_05_Click);
+            // 
+            // pb_06
+            // 
+            this.pb_06.Location = new System.Drawing.Point(113, 113);
+            this.pb_06.Name = "pb_06";
+            this.pb_06.Size = new System.Drawing.Size(100, 104);
+            this.pb_06.TabIndex = 0;
+            this.pb_06.TabStop = false;
+            this.pb_06.Click += new System.EventHandler(this.pb_06_Click);
+            // 
+            // pb_07
+            // 
+            this.pb_07.Location = new System.Drawing.Point(223, 113);
+            this.pb_07.Name = "pb_07";
+            this.pb_07.Size = new System.Drawing.Size(100, 104);
+            this.pb_07.TabIndex = 0;
+            this.pb_07.TabStop = false;
+            this.pb_07.Click += new System.EventHandler(this.pb_07_Click);
+            // 
+            // pb_08
+            // 
+            this.pb_08.Location = new System.Drawing.Point(333, 113);
+            this.pb_08.Name = "pb_08";
+            this.pb_08.Size = new System.Drawing.Size(100, 104);
+            this.pb_08.TabIndex = 0;
+            this.pb_08.TabStop = false;
+            this.pb_08.Click += new System.EventHandler(this.pb_08_Click);
+            // 
             // memory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(535, 359);
+            this.ClientSize = new System.Drawing.Size(535, 399);
             this.Controls.Add(this.btn_Jouer);
             this.Controls.Add(this.btn_Retourner);
             this.Controls.Add(this.btn_Distribuer);
@@ -205,6 +254,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pb_03)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_04)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_Recherche)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_05)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_06)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_07)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_08)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -221,6 +274,10 @@
         private System.Windows.Forms.Button btn_Retourner;
         private System.Windows.Forms.Button btn_Jouer;
         private System.Windows.Forms.PictureBox pb_Recherche;
+        private System.Windows.Forms.PictureBox pb_05;
+        private System.Windows.Forms.PictureBox pb_06;
+        private System.Windows.Forms.PictureBox pb_07;
+        private System.Windows.Forms.PictureBox pb_08;
 
     }
 }
