@@ -34,30 +34,31 @@
             this.pb_01 = new System.Windows.Forms.PictureBox();
             this.pb_02 = new System.Windows.Forms.PictureBox();
             this.pb_03 = new System.Windows.Forms.PictureBox();
-            this.pb_04 = new System.Windows.Forms.PictureBox();
-            this.btn_Distribuer = new System.Windows.Forms.Button();
-            this.ilSabotDeCartes = new System.Windows.Forms.ImageList(this.components);
-            this.btn_Retourner = new System.Windows.Forms.Button();
-            this.btn_Jouer = new System.Windows.Forms.Button();
-            this.pb_Recherche = new System.Windows.Forms.PictureBox();
             this.pb_05 = new System.Windows.Forms.PictureBox();
+            this.pb_04 = new System.Windows.Forms.PictureBox();
             this.pb_06 = new System.Windows.Forms.PictureBox();
             this.pb_07 = new System.Windows.Forms.PictureBox();
             this.pb_08 = new System.Windows.Forms.PictureBox();
+            this.ilSabotDeCartes = new System.Windows.Forms.ImageList(this.components);
+            this.btn_Jouer = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.pb_Recherche = new System.Windows.Forms.PictureBox();
             this.tlpTapisDeCartes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_01)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_02)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_03)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_04)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_Recherche)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_05)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_04)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_06)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_07)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_08)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_Recherche)).BeginInit();
             this.SuspendLayout();
             // 
             // tlpTapisDeCartes
             // 
+            this.tlpTapisDeCartes.BackColor = System.Drawing.Color.Transparent;
             this.tlpTapisDeCartes.ColumnCount = 4;
             this.tlpTapisDeCartes.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tlpTapisDeCartes.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
@@ -106,6 +107,15 @@
             this.pb_03.TabStop = false;
             this.pb_03.Click += new System.EventHandler(this.pb_03_Click);
             // 
+            // pb_05
+            // 
+            this.pb_05.Location = new System.Drawing.Point(3, 113);
+            this.pb_05.Name = "pb_05";
+            this.pb_05.Size = new System.Drawing.Size(100, 104);
+            this.pb_05.TabIndex = 0;
+            this.pb_05.TabStop = false;
+            this.pb_05.Click += new System.EventHandler(this.pb_05_Click);
+            // 
             // pb_04
             // 
             this.pb_04.Location = new System.Drawing.Point(333, 3);
@@ -115,15 +125,32 @@
             this.pb_04.TabStop = false;
             this.pb_04.Click += new System.EventHandler(this.pb_04_Click);
             // 
-            // btn_Distribuer
+            // pb_06
             // 
-            this.btn_Distribuer.Location = new System.Drawing.Point(53, 343);
-            this.btn_Distribuer.Name = "btn_Distribuer";
-            this.btn_Distribuer.Size = new System.Drawing.Size(100, 23);
-            this.btn_Distribuer.TabIndex = 1;
-            this.btn_Distribuer.Text = "DISTRIBUER";
-            this.btn_Distribuer.UseVisualStyleBackColor = true;
-            this.btn_Distribuer.Click += new System.EventHandler(this.btn_Distribuer_Click);
+            this.pb_06.Location = new System.Drawing.Point(113, 113);
+            this.pb_06.Name = "pb_06";
+            this.pb_06.Size = new System.Drawing.Size(100, 104);
+            this.pb_06.TabIndex = 0;
+            this.pb_06.TabStop = false;
+            this.pb_06.Click += new System.EventHandler(this.pb_06_Click);
+            // 
+            // pb_07
+            // 
+            this.pb_07.Location = new System.Drawing.Point(223, 113);
+            this.pb_07.Name = "pb_07";
+            this.pb_07.Size = new System.Drawing.Size(100, 104);
+            this.pb_07.TabIndex = 0;
+            this.pb_07.TabStop = false;
+            this.pb_07.Click += new System.EventHandler(this.pb_07_Click);
+            // 
+            // pb_08
+            // 
+            this.pb_08.Location = new System.Drawing.Point(333, 113);
+            this.pb_08.Name = "pb_08";
+            this.pb_08.Size = new System.Drawing.Size(100, 104);
+            this.pb_08.TabIndex = 0;
+            this.pb_08.TabStop = false;
+            this.pb_08.Click += new System.EventHandler(this.pb_08_Click);
             // 
             // ilSabotDeCartes
             // 
@@ -171,94 +198,72 @@
             this.ilSabotDeCartes.Images.SetKeyName(39, "Pompier.jpg");
             this.ilSabotDeCartes.Images.SetKeyName(40, "Serveur.jpg");
             // 
-            // btn_Retourner
-            // 
-            this.btn_Retourner.Location = new System.Drawing.Point(163, 343);
-            this.btn_Retourner.Name = "btn_Retourner";
-            this.btn_Retourner.Size = new System.Drawing.Size(100, 23);
-            this.btn_Retourner.TabIndex = 2;
-            this.btn_Retourner.Text = "RETOURNER";
-            this.btn_Retourner.UseVisualStyleBackColor = true;
-            this.btn_Retourner.Click += new System.EventHandler(this.btn_Retourner_Click);
-            // 
             // btn_Jouer
             // 
-            this.btn_Jouer.Location = new System.Drawing.Point(273, 343);
+            this.btn_Jouer.Location = new System.Drawing.Point(112, 262);
             this.btn_Jouer.Name = "btn_Jouer";
-            this.btn_Jouer.Size = new System.Drawing.Size(100, 23);
+            this.btn_Jouer.Size = new System.Drawing.Size(179, 52);
             this.btn_Jouer.TabIndex = 2;
             this.btn_Jouer.Text = "JOUER";
             this.btn_Jouer.UseVisualStyleBackColor = true;
             this.btn_Jouer.Click += new System.EventHandler(this.btn_Jouer_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Snow;
+            this.label1.Location = new System.Drawing.Point(62, 335);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(91, 25);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "SCORE";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(184, 340);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 4;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
             // pb_Recherche
             // 
+            this.pb_Recherche.BackColor = System.Drawing.Color.Transparent;
             this.pb_Recherche.Location = new System.Drawing.Point(383, 262);
             this.pb_Recherche.Name = "pb_Recherche";
             this.pb_Recherche.Size = new System.Drawing.Size(100, 104);
             this.pb_Recherche.TabIndex = 0;
             this.pb_Recherche.TabStop = false;
             // 
-            // pb_05
-            // 
-            this.pb_05.Location = new System.Drawing.Point(3, 113);
-            this.pb_05.Name = "pb_05";
-            this.pb_05.Size = new System.Drawing.Size(100, 104);
-            this.pb_05.TabIndex = 0;
-            this.pb_05.TabStop = false;
-            this.pb_05.Click += new System.EventHandler(this.pb_05_Click);
-            // 
-            // pb_06
-            // 
-            this.pb_06.Location = new System.Drawing.Point(113, 113);
-            this.pb_06.Name = "pb_06";
-            this.pb_06.Size = new System.Drawing.Size(100, 104);
-            this.pb_06.TabIndex = 0;
-            this.pb_06.TabStop = false;
-            this.pb_06.Click += new System.EventHandler(this.pb_06_Click);
-            // 
-            // pb_07
-            // 
-            this.pb_07.Location = new System.Drawing.Point(223, 113);
-            this.pb_07.Name = "pb_07";
-            this.pb_07.Size = new System.Drawing.Size(100, 104);
-            this.pb_07.TabIndex = 0;
-            this.pb_07.TabStop = false;
-            this.pb_07.Click += new System.EventHandler(this.pb_07_Click);
-            // 
-            // pb_08
-            // 
-            this.pb_08.Location = new System.Drawing.Point(333, 113);
-            this.pb_08.Name = "pb_08";
-            this.pb_08.Size = new System.Drawing.Size(100, 104);
-            this.pb_08.TabIndex = 0;
-            this.pb_08.TabStop = false;
-            this.pb_08.Click += new System.EventHandler(this.pb_08_Click);
-            // 
             // memory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(535, 399);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(534, 401);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_Jouer);
-            this.Controls.Add(this.btn_Retourner);
-            this.Controls.Add(this.btn_Distribuer);
             this.Controls.Add(this.pb_Recherche);
             this.Controls.Add(this.tlpTapisDeCartes);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "memory";
             this.Text = "le jeu du memory";
-            this.Load += new System.EventHandler(this.memory_Load);
             this.tlpTapisDeCartes.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pb_01)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_02)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_03)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_04)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_Recherche)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_05)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_04)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_06)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_07)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_08)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_Recherche)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -269,15 +274,15 @@
         private System.Windows.Forms.PictureBox pb_02;
         private System.Windows.Forms.PictureBox pb_03;
         private System.Windows.Forms.PictureBox pb_04;
-        private System.Windows.Forms.Button btn_Distribuer;
         private System.Windows.Forms.ImageList ilSabotDeCartes;
-        private System.Windows.Forms.Button btn_Retourner;
         private System.Windows.Forms.Button btn_Jouer;
         private System.Windows.Forms.PictureBox pb_Recherche;
         private System.Windows.Forms.PictureBox pb_05;
         private System.Windows.Forms.PictureBox pb_06;
         private System.Windows.Forms.PictureBox pb_07;
         private System.Windows.Forms.PictureBox pb_08;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox1;
 
     }
 }
