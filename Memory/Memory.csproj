@@ -91,9 +91,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="ressources\FONDS\DBZ_Earth%27s_Special_Forces.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="ressources\FONDS\DBZ_Earth%27s_Special_Forces1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
